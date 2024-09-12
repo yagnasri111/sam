@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>Validation</h1>
+    <form action="./sample1.html" method="post">
+        <h4>password Validation</h4>
+        <input type="text" name="password" required placeholder="Enter password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[/d])(?=.*[@!#$&]).{8,16}"><br>
+        <h4>email Validation</h4>
+        <input type="text" name="email" required placeholder="Enter email" pattern="[a-z._/d]+@[a-z]+/.[a-z]{2,}"><br>
+        <h4>phno Validation</h4>
+        <input type="text" name="phno" required placeholder="Enter number" pattern="/+91[6-9]/d+{9,9}"><br>
+        <input type="text" name="dob" required placeholder="YYYY-MM-DD" pattern="(19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])">
+        <input type="submit">
+    </form>
+</body>
+</html>
